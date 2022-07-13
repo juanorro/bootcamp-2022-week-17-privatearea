@@ -34,6 +34,7 @@ export default function Success() {
 
   if (!session) {
     router.push('/')
+    return
   }
 
   return <div></div>

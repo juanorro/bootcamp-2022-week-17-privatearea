@@ -17,10 +17,12 @@ export default function Members({ markdown }) {
 
   if (!session) {
     router.push('/')
+    return
   }
 
   if (!session.user.isSubscriber) {
     router.push('/join')
+    return
   }
 
   return (

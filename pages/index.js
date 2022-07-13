@@ -15,6 +15,7 @@ export default function Home() {
 
   if (session) {
     router.push('/members')
+    return
   }
 
   return (

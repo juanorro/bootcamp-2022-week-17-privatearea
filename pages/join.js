@@ -16,10 +16,12 @@ export default function Join() {
 
   if (!session) {
     router.push('/')
+    return
   }
 
   if (session.user.isSubscriber) {
     router.push('/members')
+    return
   }
 
   return (
